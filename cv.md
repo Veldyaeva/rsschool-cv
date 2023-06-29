@@ -23,7 +23,11 @@ C#, SQL, Html, MSOffice
 ## English B2
 
 ## Code Example
-
+```
+function multiply(a, b){
+  a * b
+}
+```
 ## About
 I had a great expirience in communications and solving problems becoes I have two children. 
 I've been a programmer for 7 years, but also I love to camping, swim, growing plants and so.
