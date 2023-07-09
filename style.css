@@ -6,7 +6,7 @@
     font-family: 'Noto_Bold';
     src: url("asserts/fonts/Noto_Sans/NotoSans-Bold.ttf");
 }
-/* * { box-sizing: border-box; border: 1px solid blueviolet;}*/
+
 body{
     min-height: 100vh;
     margin: 0; padding: 0;
