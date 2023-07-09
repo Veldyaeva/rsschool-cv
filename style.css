@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Noto_Sans';
-    src: url("asserts/fonts/Noto_Sans/NotoSans-Regular.ttf");
+    src: url("NotoSans-Regular.ttf");
 }
 @font-face {
     font-family: 'Noto_Bold';
-    src: url("asserts/fonts/Noto_Sans/NotoSans-Bold.ttf");
+    src: url("NotoSans-Bold.ttf");
 }
 
 body{
