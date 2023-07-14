@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Noto_Sans';
+    src: url("asserts/fonts/Noto_Sans/NotoSans-Regular.ttf");
+}
+@font-face {
+    font-family: 'Noto_Bold';
+    src: url("asserts/fonts/Noto_Sans/NotoSans-Bold.ttf");
+}
+/* * { box-sizing: border-box; border: 1px solid blueviolet;}*/
+body{
+    min-height: 100vh;
+    margin: 0; padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Noto_Sans;
+}
+header{
+    font-family: Noto_Bold;
+}
+code{
+    font-family: Noto_Sans;
+}
+.content_navigation
+{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .section
+  {
+text-decoration: none;
+  }
+  .section_title
+  {
+    text-decoration: underline;
+  }
