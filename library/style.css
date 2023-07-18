@@ -1,41 +1,228 @@
 @font-face {
-    font-family: 'Noto_Sans';
-    src: url("asserts/fonts/Noto_Sans/NotoSans-Regular.ttf");
+    font-family: 'Inter';
+    src: url("asserts/fonts/Inter-V.ttf");
+    font-family: 'Forum' ;
+    src: url("asserts/fonts/Forum-Regular.ttf");
 }
-@font-face {
-    font-family: 'Noto_Bold';
-    src: url("asserts/fonts/Noto_Sans/NotoSans-Bold.ttf");
-}
-/* * { box-sizing: border-box; border: 1px solid blueviolet;}*/
 body{
+    
     min-height: 100vh;
     margin: 0; padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-family: Noto_Sans;
+  /*  font-family: Forum;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #0C0C0E;*/
 }
-header{
-    font-family: Noto_Bold;
-}
-code{
-    font-family: Noto_Sans;
-}
-.content_navigation
+a
 {
-display: flex;
-align-items: center;
-justify-content: space-between;
+    text-decoration: none;
+    color: inherit; 
 }
-.container {
-    max-width: 1440px;
+a:hover
+{
+    cursor:pointer; 
+    font-weight:lighter;
+}
+
+.conteiner {
+    width: 1440px;
     margin: 0 auto;
   }
-  .section
-  {
-text-decoration: none;
-  }
-  .section_title
-  {
-    text-decoration: underline;
-  }
+
+/* Header*/
+
+.header{
+    font-family: Forum;    
+    /*flex-basis: content;
+    flex-wrap: nowrap;*/
+    background-color: #0C0C0E;
+}
+
+.header_container
+{
+    display:flex;
+    
+   /* justify-content:space-between;*/
+    align-items:center;
+    height: 90px;
+    padding: 20px 20px;
+}
+
+.header_logo{ 
+    flex-wrap:nowrap;
+    vertical-align: middle;
+    color: #FFF;
+    font-family: Forum;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 166.667% */
+    letter-spacing: 0.6px;
+}
+
+.header_list
+{
+    display: flex;
+
+    flex-wrap: nowrap;
+    position: absolute;
+    right: 88px;
+    vertical-align: middle;
+    align-content: baseline;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 50px; /* 250% */
+}
+
+.header_list_item{margin-right: 30px; display: inline;}
+.header_list_item:last-child{margin-right: 0px;}
+.profile{
+    position: absolute;
+    right: 20px;
+    width: 28px;
+    height: 28px;
+    }
+/* Header*/
+/* Main*/
+/*Welcome*/
+.welcome
+{
+    display: flex;
+    height: 600px;
+    background-image: url("./asserts/img/henry-be-TCsCykbwSJw-unsplash.jpg");
+    background-position:center;
+    background-size:100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.welcome_bg
+{
+    color: #FFF;
+    text-align: center;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; 
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    display: flex;
+    width: 520px;
+    height: 150px;
+    padding: 35px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #0C0C0E;
+}
+
+/*Welcome_end*/
+
+/*About*/
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    flex-shrink: 0;
+}
+/*About_end*/
+
+/*About*/
+.Favourites{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    flex-shrink: 0;
+}
+.Favourites{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    flex-shrink: 0;
+}
+.CoffeeShop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    flex-shrink: 0;
+}
+.Contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    flex-shrink: 0;
+}
+.LibruaryCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0C0C0E;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    flex-shrink: 0;
+}
+/*About_end*/
+/*
+.footer
+{
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 250px;
+background-color: #0C0C0E;
+}*/
