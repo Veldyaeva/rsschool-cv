@@ -45,7 +45,7 @@ a:hover
 .header{
     background-color: #0C0C0E;
 }
-
+.biege{color: #BB945F;}
 .container_head
 {
     display:flex;
@@ -130,7 +130,8 @@ a:hover
     align-items: center;
     color: #0C0C0E;
     
-    
+    padding-top: 20px;
+    padding-bottom: 40px;
  }
 .section_title
 {
@@ -145,8 +146,8 @@ a:hover
     line-height: 40px; /* 100% */
     letter-spacing: 2px;
     flex-shrink: 0;
-    margin-top: 20px;
     text-transform: capitalize;
+    margin-top: 20px;
 }
 .section_line{
     display: flex;
@@ -166,6 +167,7 @@ a:hover
     font-weight: 400;
     line-height: 40px;
     text-transform: none;
+      color: #000;
 }
 .bold{ font-weight: 700;}
 
@@ -207,20 +209,22 @@ a:hover
 /*Favourites*/
 
 .select_fav{
-    padding-left: 20px;
+    
     display: flex;
     align-self: start;
+    align-content: start;
+    margin: 20px;
 }
 .seasone_item{margin-right: 20px;}
 .seasone_label{margin-right: 90px;}
-.fav{color: #BB945F;}
-.favorites_images{
+
+.bg_description.favorites_images{
     height:300px;
     width:200px;
-    position: relative;
+    position:absolute;
     left: 390px;
-    bottom:280px;
-
+    top:255px;
+    overflow-wrap:initial;
 }
 .fav_items{
     display: grid;
@@ -246,11 +250,22 @@ a:hover
     line-height: 40px;
     letter-spacing: 2px;
     text-transform: capitalize;}
+    .fav_title{color: #000;
+        font-family: Forum;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px; /* 200% */
+        letter-spacing: 2px;
+        text-transform: capitalize;}
 .bg_description{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
     border: #000 solid 1px;
+    color: #000;
+
 }
 .bg_description button{
     transition: .5s;
@@ -258,6 +273,7 @@ a:hover
     width: 75px;
     background-color: transparent;
     color: #0C0C0E;
+    margin-bottom: 15px;
 text-align: center;
 font-family: Inter;
 font-size: 10px;
@@ -269,9 +285,12 @@ text-transform: capitalize;
 border-radius: 2px;
 border: 1px solid #0C0C0E;
 }
+
+.bg_description button:focus,
 .bg_description button:hover{
     background-color: #BB945F;
 }
+
 .bg_description button:disabled
 {
     border-radius: 2px;
@@ -284,8 +303,19 @@ border: 1px solid #0C0C0E;
 .part1{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    
     padding-left: 20px;
+    
+}
+.part1 title{
+    color: #000;
+font-family: Forum;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+letter-spacing: 2px;
+text-transform: capitalize;
 }
 .info{color: #000;
     font-family: Inter;
@@ -295,12 +325,14 @@ border: 1px solid #0C0C0E;
     line-height: 40px; /* 266.667% */
     letter-spacing: 2px;
     text-transform: capitalize;
-    height: 350px;
-    width: 320px;;
+   height: 350px;
+    width: 320px;
 }
 
 
 /*favourites end*/
+
+/*coffee Shop*/
 .CoffeeShop{
     display: flex;
     flex-direction: column;
@@ -315,6 +347,63 @@ border: 1px solid #0C0C0E;
     text-transform: capitalize;
     flex-shrink: 0;
 }
+.price{
+    display: flex;
+    flex-wrap:nowrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.coffee_tea{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+gap: 40px;
+color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+letter-spacing: 2px;
+text-transform: capitalize;
+}
+.coffee_tea.list_item{
+    margin-top: 40px;
+   display: flex;
+   justify-content: space-between;
+
+}
+.coffee_tea.list_item::before{marker:none;}
+.price.name{
+    color: #000;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 200% */
+letter-spacing: 2px;
+text-transform: capitalize;
+}
+.price.count{color: #000;
+    font-family: Forum;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;}
+.line{
+    background-color: green;
+    width: 90%;
+    height: 5px;
+    border-top: 5px dotted black;
+    line-height: 80%;
+}
+   /* width: 100px;
+    border-top: solid 10px #BB945F;
+    line-height: 10%;
+}*/
+/*coffee Shop end*/
 .Contacts{
     display: flex;
     flex-direction: column;
