@@ -2,13 +2,361 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <header class=""></header>
-  <main class="main"></main>
-  <footer class=""></footer>
+  <meta name="viewport" initial-scale=1.0">
+  <title>Brooklyn Public Library</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./asserts/favicon.png">
 
+</head>
+<body class="body">
+<div class="conteiner">
+  <header class="headers">
+     
+      <div class="header container_head">
+        <div class="logo">
+          <a href="index.html">
+            <h1 class="headers">Brooklyn Public Library</h1>
+          </a>
+        </div>
+      
+          <ul class="list">
+            <li class="list_item">
+              <a href="#about">
+                 About
+              </a>
+            </li>
+            <li class="list_item">
+              <a href="#favorites">
+                Favorites
+              </a>
+            </li>
+            <li class="list_item">
+              <a href="#coffeeShop">
+                Coffee shop
+              </a>
+            </li>
+            <li class=" list_item">
+              <a href="#contacts">
+                Contacts
+              </a>
+            </li>
+            <li class=" list_item">
+              <a href="#libCard">
+                Library card
+              </a>
+            </li>
+          </ul>
+        <div class="profile">
+          <a href="/index.html">
+            <img src="./asserts/img/svg/icon_profile.svg" alt="icon profile">
+          </a>
+        </div>
+      </div>
+     
+  </header>
+  
+  <main class="main">
+
+      <section class="welcome">
+        <div class="welcome_bg">
+          <p class="bg">Welcome to the Brooklyn Library</p>
+        </div>
+
+        
+      </section>
+      <section class="section" id="about">
+        <div class="section_title">
+          <h2 class="section_title">about</h2>
+        <hr class="section_line"/>
+          <span class="descr">Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</span>
+        </div>
+        <div class="images">
+          <img  class="images_item" src="./asserts/about/image 1.jpg">
+          <img  class="images_item" src="./asserts/about/image 2.jpg">
+          <img  class="images_item" src="./asserts/about/image 3.jpg">
+        </div>
+        <div class="pagination">
+
+          <button class="pag_btn_conteiner"><span class="pag_btn selected"></span></button>
+          <button class="pag_btn_conteiner"><span class="pag_btn regular"></span> </button>
+          <button class="pag_btn_conteiner"> <span class="pag_btn regular"></span></button>
+          
+        </div>
+        </section>
+
+        <section class="section" id="favorites">
+          <h2 class="section_title">
+            favorites
+            <hr class="section_line"/>
+          </h2>
+           <div class="select_fav">
+          <span class="descr bold">Pick favorites of seasone</span>
+           </div>
+           <div class="select_fav">
+          <input class="seasone_item" id="radio1" type="radio" name="radio" checked>
+            <label class="seasone_label" for="radio1">Winter</label>
+          <input class="seasone_item"id="radio2" type="radio" name="radio" unchecked>
+	          <label class="seasone_label" for="radio2">Spring</label>
+          <input class="seasone_item" id="radio3" type="radio" name="radio" unchecked>
+	          <label class="seasone_label" for="radio3">Summer</label>
+          <input class="seasone_item" id="radio4" type="radio" name="radio" unchecked>
+	          <label class="seasone_label" for="radio4">Autumn</label>
+          </div>
+          <div class="fav_items" id="winter">
+            <div class="bg_description">
+              <div class="part1">
+              <div class="title"> staff pics</div>
+              <hr class="section_line biege"/>
+            
+              <div class="fav_name">the book eaters</div>
+              <div class="fav_author">by sunyi dean</div>
+              <div class="info">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.   
+              </div>
+              <button >buy</button>
+              </div>
+              <img class="favorites_images" src="./asserts/favorites/book (3).png" alt="book1">
+            </div>
+            <div class="bg_description">
+              <div class="fav_title  part1">staff pics
+              <hr class="section_line biege"/>
+           
+              <div class="fav_name">Cackle</div>
+              <div class="fav_author">By Rachel Harrison</div>
+              <div class="info">Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</div>
+              <button>buy</button>
+              </div>
+              <img class="favorites_images" src="./asserts/favorites/book (2).png" alt="book2">
+            </div>
+            <div class="bg_description">
+              <div class="fav_title part1">
+              staff pics
+              <hr class="section_line biege"/>
+              <div class="fav_name">Dante: Poet of the Secular World</div>
+              <div class="fav_author">By Erich Auerbach</div>
+              <div class="info">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</div>
+              <button>buy</button>
+              </div>
+              <img class="favorites_images" src="./asserts/favorites/book (1).png" alt="book3">
+            </div>
+            <div class="bg_description">
+              <div class="part1 fav_title">
+              staff pics
+              <hr class="section_line biege"/>
+              <div class="fav_name">The Last Queen</div>
+              <div class="fav_author">By Clive Irving</div>
+              <div class="info">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</div>
+              <button disabled >own</button>
+              </div>
+              <img class="favorites_images" src="./asserts/favorites/book.png" alt="book4">
+            </div>
+          </div>
+
+          <div class="fav_items" id="Spring" style="display: none;">
+            <div class="bg_description">
+              <div class="part1">
+              <div class="section_title">staff pics
+              <hr class="section_line biege"/>
+            </div>
+              <div class="fav_name">the book eaters</div>
+              <div class="fav_author">by sunyi dean</div>
+              <div class="info">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.   
+              </div>
+              <button >buy</button>
+              </div>
+              <img class="favorites_images" src="./asserts/favorites/book (3).png" alt="book1">
+            </div>
+            <div class="bg_description">
+             <div class="part1">
+              <div class="section_title">staff pics
+              <hr class="section_line biege"/>
+              </div>
+              <div class="fav_name">Cackle</div>
+              <div class="fav_author">By Rachel Harrison</div>
+              <div class="info">Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</div>
+              <button>buy</button>
+             </div>
+              <img class="favorites_images" src="./asserts/favorites/book (2).png" alt="book2">
+            </div>
+            <div class="bg_description">
+              <div class="part1">
+              <div class="section_title">staff pics
+              <hr class="section_line biege"/></div>
+              <div class="fav_name">Dante: Poet of the Secular World</div>
+              <div class="fav_author">By Erich Auerbach</div>
+              <div class="info">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</div>
+              <button>buy</button>
+              </div>
+              <img class="favorites_images" src="./asserts/favorites/book (1).png" alt="book3">
+            </div>
+            <div class="bg_description">
+              <div class="part1">
+              <div class="section_title">staff pics
+              <hr class="section_line biege"/></div>
+              <div class="fav_name">The Last Queen</div>
+              <div class="fav_author">By Clive Irving</div>
+              <div class="info">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</div>
+              <button disabled >own</button>
+              </div>
+              <img class="favorites_images" src="./asserts/favorites/book.png" alt="book4">
+            </div>
+          </div>
+            <div class="fav_items" id="summer" style="display: none;">
+              <div class="bg_description">
+                <div class="part1">
+                <div class="section_title">staff pics
+                <hr class="section_line biege"/>
+              </div>
+                <div class="fav_name">the book eaters</div>
+                <div class="fav_author">by sunyi dean</div>
+                <div class="info">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.   
+                </div>
+                <button >buy</button>
+                </div>
+                <img class="favorites_images" src="./asserts/favorites/book (3).png" alt="book1">
+              </div>
+              <div class="bg_description">
+               <div class="part1">
+                <div class="fav_title">staff pics
+                <hr class="section_line biege"/>
+                </div>
+                <div class="fav_name">Cackle</div>
+                <div class="fav_author">By Rachel Harrison</div>
+                <div class="info">Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</div>
+                <button>buy</button>
+               </div>
+                <img class="favorites_images" src="./asserts/favorites/book (2).png" alt="book2">
+              </div>
+              <div class="bg_description">
+                <div class="part1">
+                <div class="section_title">staff pics
+                <hr class="section_line biege"/></div>
+                <div class="fav_name">Dante: Poet of the Secular World</div>
+                <div class="fav_author">By Erich Auerbach</div>
+                <div class="info">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</div>
+                <button>buy</button>
+                </div>
+                <img class="favorites_images" src="./asserts/favorites/book (1).png" alt="book3">
+              </div>
+              <div class="bg_description">
+                <div class="part1">
+                <div class="section_title">staff pics
+                <hr class="section_line biege"/></div>
+                <div class="fav_name">The Last Queen</div>
+                <div class="fav_author">By Clive Irving</div>
+                <div class="info">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</div>
+                <button disabled >own</button>
+                </div>
+                <img class="favorites_images" src="./asserts/favorites/book.png" alt="book4">
+              </div>
+            </div>
+              <div class="fav_items" id="autumn" style="display: none;">
+                <div class="bg_description">
+                  <div class="part1">
+                  <div class="fav_title">staff pics
+                  <hr class="section_line biege"/>
+                </div>
+                  <div class="fav_name">the book eaters</div>
+                  <div class="fav_author">by sunyi dean</div>
+                  <div class="info">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.   
+                  </div>
+                  <button >buy</button>
+                  </div>
+                  <img class="favorites_images" src="./asserts/favorites/book (3).png" alt="book1">
+                </div>
+                <div class="bg_description">
+                 <div class="part1">
+                  <div class="fav_title">staff pics
+                  <hr class="section_line biege"/>
+                  </div>
+                  <div class="fav_name">Cackle</div>
+                  <div class="fav_author">By Rachel Harrison</div>
+                  <div class="info">Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</div>
+                  <button>buy</button>
+                 </div>
+                  <img class="favorites_images" src="./asserts/favorites/book (2).png" alt="book2">
+                </div>
+                <div class="bg_description">
+                  <div class="part1">
+                  <div class="section_title">staff pics
+                  <hr class="section_line biege"/></div>
+                  <div class="fav_name">Dante: Poet of the Secular World</div>
+                  <div class="fav_author">By Erich Auerbach</div>
+                  <div class="info">Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</div>
+                  <button>buy</button>
+                  </div>
+                  <img class="favorites_images" src="./asserts/favorites/book (1).png" alt="book3">
+                </div>
+                <div class="bg_description">
+                  <div class="part1">
+                  <div class="section_title">staff pics
+                  <hr class="section_line biege"/>
+                  <div class="fav_name">The Last Queen</div>
+                  <div class="fav_author">By Clive Irving</div>
+                  <div class="info">A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</div>
+                  <button disabled >own</button>
+                  </div>
+                  <img class="favorites_images" src="./asserts/favorites/book.png" alt="book4">
+                </div>
+              </div>
+        </section>
+
+
+
+      <section class="section" id="coffeeShop ">
+        <h2 class="section_title">coffee shop</h2>
+        <hr class="section_line"/>
+        <p class="descr" style="height: 120px; padding-left: 20px; padding-right: 20px;">In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. 
+  you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts from bakery.</p>
+<div class="price">
+<ul class="coffee_tea">
+<li class="list_item"><span class="name"> Brew Coffee</span><span class="count">$3</span></li>
+<li class="list_item">French Press Pot $5</li>
+<li class="list_item">Espresso $2</li>
+<li class="list_item">Cappuccino $4</li>
+<li class="list_item">Hot tea $2</li>
+<li class="list_item">Cold Tea $2</li>
+</ul>
+<ul class="coffee_tea">
+  <li class="list_item">Forest Gateau $16</li>
+<li class="list_item">Blue Moon $16</li>
+<li class="list_item">Truffle Cake $15</li>
+<li class="list_item">Chocolate Cake $18</li>
+<li class="list_item">Poet’s Dream Cake $16</li>
+<li class="list_item">Pineapple Cake $14</li>
+</ul>
+</div>
+
+      </section>
+
+      <section class="section" id="contacts">
+        <p class="section_title">
+          our contacts
+        </p>
+         <hr class="section_line"/>
+         <div class="contacts">
+          <div><p> For all Library inquiries:</p>
+          <p>Please call <a href="tel:6177302370">(617) 730-2370</a></p>
+          <p>For TTY service, please call (617) 730-2370</p>
+          <p>Putterham Library: (617) 730-2385</p>
+          <p>Senior Staff</p>
+          <p>Library Director: Amanda Hirst</p>
+          </div> 
+          <img src="./asserts/contacts/Rectangle 4.png" alt="map here">
+        </div>
+
+      </section>
+      <section class="section" id="libCard">
+        <p class="section_title">
+          digital library card
+        </p>
+         <hr class="section_line"/>
+      </section>
+
+  </main>
+  <footer class="footer">
+    
+  </footer>
+</div>
 </body>
 </html>
+
