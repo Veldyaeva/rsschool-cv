@@ -1,0 +1,166 @@
+html {
+    scroll-behavior: smooth; 
+  }
+
+body{
+min-height: 100vh;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.text_lbl{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 100%;
+     align-items: flex-start;
+     height: 3rem;
+     background-color: white;
+}
+
+.img_conteiner{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 5%;
+  column-gap: 20vh;
+  }
+
+input {display: none;}
+
+.imgs{
+  display: flex;
+  align-items: center;
+  width: calc(100%*16);
+  overflow: hidden;
+  transition: margin-right 1s;
+}
+
+.imgs img{
+  width: calc(50%/8);
+  background-color: white;
+  transition: margin-left 1s;
+  border-radius: 1rem;
+  }
+
+.text{
+  display: flex;
+  overflow: hidden;
+  font-size: 90%;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: row;
+  width: calc(100%*8);
+  flex-wrap: nowrap;
+  }
+
+.text_wrap{flex-direction: column; overflow: hidden;}
+span{
+  transition: margin-left 1s linear;
+  white-space: nowrap;
+  width: calc(100%);
+  height: 100%;
+}
+  
+.lbl{
+  display: flex;
+  width: 35vw;
+  z-index: 2;
+  background-color: white;
+}
+  
+label{
+    display: flex;
+    appearance:initial;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 50%;
+    border: solid #2fb6b8 1vw;
+    transition: 0.6s all linear;
+    outline: none;
+    margin: 1vw;
+}
+  
+#input1:checked ~ .text_lbl .lbl .img1,
+#input2:checked ~ .text_lbl .lbl .img2,
+#input3:checked ~ .text_lbl .lbl .img3,
+#input4:checked ~ .text_lbl .lbl .img4,
+#input5:checked ~ .text_lbl .lbl .img5,
+#input6:checked ~ .text_lbl .lbl .img6,
+#input7:checked ~ .text_lbl .lbl .img7,
+#input8:checked ~ .text_lbl .lbl .img8 {  border: 1vw solid rgb(165, 74, 230);}
+
+#input1:checked ~ .imgs .img1{ margin-left:calc(0%);}
+#input2:checked ~ .imgs>.img1{ margin-left:calc(-100%/16);}
+#input3:checked ~ .imgs .img1{ margin-left:calc(-200%/16);}
+#input4:checked ~ .imgs .img1{ margin-left:calc(-300%/16);}
+#input5:checked ~ .imgs .img1{ margin-left:calc(-400%/16);}
+#input6:checked ~ .imgs .img1{ margin-left:calc(-500%/16);}
+#input7:checked ~ .imgs .img1{ margin-left:calc(-600%/16);}
+#input8:checked ~ .imgs .img1{ margin-left:calc(-700%/16);}
+
+
+#input1:checked ~ .text_lbl .text span.img1{  margin-left: calc(0%);}
+#input2:checked ~ .text_lbl .text span.img1{  margin-left: calc(-100%/7);}
+#input3:checked ~ .text_lbl .text span.img1{  margin-left: calc(-200%/6);}
+#input4:checked ~ .text_lbl .text span.img1{  margin-left: calc(-300%/5);}
+#input5:checked ~ .text_lbl .text span.img1{  margin-left: calc(-400%/4);}
+#input6:checked ~ .text_lbl .text span.img1{  margin-left: calc(-500%/3);}
+#input7:checked ~ .text_lbl .text span.img1{  margin-left: calc(-600%/2);}
+#input8:checked ~ .text_lbl .text span.img1{  margin-left: calc(-700%/1);}
+
+
+label.img1:hover{cursor: pointer;transform: scale(150%);}
+label.img2:hover{cursor: pointer;transform: scale(150%);}
+label.img3:hover{cursor: pointer;transform: scale(150%);}
+label.img4:hover{cursor: pointer;transform: scale(150%);}
+label.img4:hover{cursor: pointer;transform: scale(150%);}
+label.img5:hover{cursor: pointer;transform: scale(150%);}
+label.img6:hover{cursor: pointer;transform: scale(150%);}
+label.img7:hover{cursor: pointer;transform: scale(150%);}
+label.img8:hover{cursor: pointer;transform: scale(150%);}
+
+@media (max-width:500px) {
+  .text_lbl {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 0;
+    display: flex;
+    height: 8vh;
+  }
+  .text {
+    text-align: center;
+    width: 100%;
+    /* font-size: 150%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+    height: calc(4vw*8);
+  }
+  .lbl {
+    justify-content: center;
+  }
+ .text_wrap{
+  height: calc(4vw*8);
+ }
+ .span{
+  transition: margin-top 0.5s linear;
+ }
+ #input1:checked ~ .text_lbl .text span.img1{ margin-left: 0%; margin-top: calc(0%);}
+ #input2:checked ~ .text_lbl .text span.img1{ margin-left: 0%; margin-top: calc(-4vw);}
+ #input3:checked ~ .text_lbl .text span.img1{ margin-left: 0%; margin-top: calc(-4vw*2);}
+ #input4:checked ~ .text_lbl .text span.img1{ margin-left: 0%; margin-top: calc(-4vw*3);}
+ #input5:checked ~ .text_lbl .text span.img1{ margin-left: 0%; margin-top: calc(-4vw*4);}
+ #input6:checked ~ .text_lbl .text span.img1{ margin-left: 0%; margin-top: calc(-4vw*5);}
+ #input7:checked ~ .text_lbl .text span.img1{ margin-left: 0%; margin-top: calc(-4vw*6);}
+ #input8:checked ~ .text_lbl .text span.img1{ margin-left: 0%; margin-top: calc(-4vw*7);}
+   
+}
