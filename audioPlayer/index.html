@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="wrapper">
+    <div class="audio-player cover">
+    <!--audio src="/music/07-Leonard Cohen - Happens To The Heart.mp3"></audio-->
+    <div class="info">
+    <div class="author">author</div>
+    <div class="album">album</div>
+    <div class="name">song</div>
+    </div>
+    <div class="controls">
+    <button class="play-prev"></button>
+    <button class="play-btn"></button>
+    <button class="play-next"></button>
+    </div>
+    <div class="player-controls scrubber">
+    <span class="duration">
+        <label class="curr">00.00</label>
+        <progress type="range" value="0" max="1">
+        <input type="range" min="0" max="100" class="progress">
+        </progress>
+        <label class="tot">00.00</label>
+    </span>
+    <!--small style="float: left; position: relative; left: 15px;" id="start-time"></--small>
+    <small style="float: right; position: relative; right: 20px;" id="end-time"></small-->
+   </div>
+    </div>
+   <script src="./style.js"></script>
+   <footer class="footer">
+    2023
+    <a href="https://rs.school/js/">
+      The Rolling Scopes School
+    </a>
+    <a href="https://github.com/Veldyaeva/">
+        Veldyaeva
+    </a>
+  </footer>
+</body>
+</html>
