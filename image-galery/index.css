@@ -68,6 +68,7 @@ border: 0.5px;
   cursor: pointer;
   color: #bdbdbd;
   transition: color 0.15s ease-in-out;
+  /* display: none; */
 }
 .search-icon:hover {
   color: #212529;
